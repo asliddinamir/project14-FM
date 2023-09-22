@@ -25,10 +25,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
 }
 
 .container {
-    width: 100%;
+    width: 1440px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -78,7 +79,7 @@ h1 span {
 .hero_img {
     background: url('./images/hero-desktop.jpg') no-repeat;
     background-size: cover;
-    width: 50%;
+    width: 45%;
     height: 100vh;
 }
 
@@ -131,10 +132,74 @@ footer {
 }
 
 .attribution {
+    text-align: center;
     color: black;
     font-size: 12px;
 }
 
 .attribution a {
     color: red;
+}
+
+@media(max-width:1430px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media(max-width:1166px) {
+    .container {
+        width: 95%;
+    }
+
+    .box1 {
+        padding: 64px;
+    }
+}
+
+@media(max-width:991px) {
+    .container {
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .hero_img {
+        background: url('/images/hero-desktop.jpg') no-repeat top center/cover;
+        width: 100%;
+        height: 448px;
+        position: absolute;
+        top: 10%;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        top: 3%;
+        left: 5%;
+    }
+
+    .info {
+        position: absolute;
+        top: 80%;
+        left: 5%;
+        margin-block: 5rem;
+        height: calc(70% + 5rem);
+    }
+
+    .info h1 {
+        font-size: 40px;
+    }
+
+    .info p {
+        font-size: 16px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: -80%;
+    }
 }
