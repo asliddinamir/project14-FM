@@ -34,9 +34,50 @@ body {
     justify-content: space-between;
 }
 
+.box1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    height: 100vh;
+    padding: 64px 163px;
+}
+
+.logo img {
+    height: 2.3rem;
+    max-width: 100%;
+}
+
+.info {
+    max-width: 550px;
+    margin-top: 2.5rem;
+}
+
+h1 {
+    font-size: 64px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: inline;
+    color: var(--gray-ish_red);
+    letter-spacing: 1.1rem;
+    line-height: 4.2rem;
+}
+
+h1 span {
+    font-weight: 300;
+    color: var(--saturated_red);
+}
+
+.description {
+    color: var(--saturated-red);
+    line-height: 1.8rem;
+    font-weight: 400;
+    width: 85%;
+    padding-top: 1.2rem;
+}
+
 .hero_img {
     background: url('./images/hero-desktop.jpg') no-repeat;
     background-size: cover;
-    width: 55%;
+    width: 50%;
     height: 100vh;
 }
