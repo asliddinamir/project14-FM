@@ -98,6 +98,13 @@ input {
     background-color: transparent;
 }
 
+.msg {
+    color: red;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
 .btn {
     cursor: pointer;
     position: absolute;
