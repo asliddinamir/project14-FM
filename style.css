@@ -68,7 +68,7 @@ h1 span {
 }
 
 .description {
-    color: var(--saturated-red);
+    color: var(--saturated_red);
     line-height: 1.8rem;
     font-weight: 400;
     width: 85%;
@@ -80,4 +80,41 @@ h1 span {
     background-size: cover;
     width: 50%;
     height: 100vh;
+}
+
+.input {
+    width: 90%;
+    position: relative;
+    margin-top: 2rem;
+    display: flex;
+}
+
+input {
+    width: 100%;
+    padding: 18px;
+    border-radius: 20px;
+    font-family: inherit;
+    border: 1px solid var(--saturated_red);
+    background-color: transparent;
+}
+
+.btn {
+    cursor: pointer;
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    width: 23%;
+    height: 3.2rem;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in-out 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, hsl(0, 29%, 68%), hsl(0, 50%, 66%))
 }
