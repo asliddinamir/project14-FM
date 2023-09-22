@@ -125,3 +125,16 @@ input {
 .btn:hover {
     background: linear-gradient(135deg, hsl(0, 29%, 68%), hsl(0, 50%, 66%))
 }
+
+footer {
+    margin-top: 20px;
+}
+
+.attribution {
+    color: black;
+    font-size: 12px;
+}
+
+.attribution a {
+    color: red;
+}
